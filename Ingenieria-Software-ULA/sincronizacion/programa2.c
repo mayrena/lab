@@ -51,7 +51,7 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-  /* Vinculación al segmento */
+  /* Vinculacion al segmento */
 	if((pto_shmem = shmat(shmem, NULL, 0)) == (char *) -1)
 	{
 		perror("\tshmat");
@@ -79,7 +79,7 @@ int main()
   for(i=0; i<repeticion; i++)
   {
     pto_inf->array_p[pos].numero++;
-    printf("\tNúmero: %d\n",i);
+    printf("\tNumero: %d\n",i);
     usleep(500000);
   }
 
